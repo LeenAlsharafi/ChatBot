@@ -1,0 +1,333 @@
+{
+  "intents": [
+    {
+      "intent": "العاب",
+      "examples": [
+        {
+          "text": "gaming"
+        },
+        {
+          "text": "ألعاب"
+        },
+        {
+          "text": "العاب"
+        },
+        {
+          "text": "قيمنق"
+        },
+        {
+          "text": "للالعاب"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "برمجة",
+      "examples": [
+        {
+          "text": "programming"
+        },
+        {
+          "text": "برمجة"
+        },
+        {
+          "text": "برمجه"
+        },
+        {
+          "text": "بروقرامينق"
+        },
+        {
+          "text": "للبرمجة"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "ترحيب",
+      "examples": [
+        {
+          "text": "السلام عليكم"
+        },
+        {
+          "text": "السلام عليكم ورحمة الله وبركاته"
+        },
+        {
+          "text": "اهلا"
+        },
+        {
+          "text": "اهلين"
+        },
+        {
+          "text": "سلام"
+        },
+        {
+          "text": "صباح الخير"
+        },
+        {
+          "text": "مرحبا"
+        },
+        {
+          "text": "مرحباا"
+        },
+        {
+          "text": "مساء الخير"
+        },
+        {
+          "text": "هاي"
+        },
+        {
+          "text": "هلا"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "تصميم",
+      "examples": [
+        {
+          "text": "design"
+        },
+        {
+          "text": "تصميم"
+        },
+        {
+          "text": "ديزاين"
+        },
+        {
+          "text": "للتصميم"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "دراسة",
+      "examples": [
+        {
+          "text": "study"
+        },
+        {
+          "text": "دراسة"
+        },
+        {
+          "text": "دراسه"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "شكر",
+      "examples": [
+        {
+          "text": "thank you"
+        },
+        {
+          "text": "ثانكس"
+        },
+        {
+          "text": "ثانكيو"
+        },
+        {
+          "text": "شكرا"
+        },
+        {
+          "text": "شكرا جزيلا"
+        },
+        {
+          "text": "شكرا لك"
+        },
+        {
+          "text": "شكررا"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "اقترح عليك هذا الجهاز : \n\nhttps://www.jarir.com/sa-ar/msi-stealth-15m-laptops-554637.html\n\nوتسعدني خدمتك دائماً .."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#العاب",
+      "dialog_node": "node_3_1625490952191",
+      "previous_sibling": "node_6_1625332687912"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "اقترح عليك هذا الجهاز :\n\nhttps://www.jarir.com/sa-ar/apple-macbook-pro-laptops-558417.html\n\nوتسعدني خدمتك دائماً .."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#تصميم",
+      "dialog_node": "node_3_1625490954878",
+      "previous_sibling": "node_7_1625490953591"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "اقترح عليك هذا الجهاز : \n\nhttps://www.jarir.com/sa-ar/asus-vivobook-flip-14-2-in-1-laptops-549700.html\n\nوتسعدني خدمتك دائماً .."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#دراسة",
+      "dialog_node": "node_6_1625332687912",
+      "previous_sibling": "node_7_1625331351564"
+    },
+    {
+      "type": "standard",
+      "title": "ترحيب",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "مرحبا بك، اختر استخدامك للكمبيوتر المحمول:\n-\tدراسة\n-\tالعاب\n-\tبرمجة\n-\tتصميم \n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#ترحيب",
+      "dialog_node": "node_7_1625331351564",
+      "previous_sibling": "مرحبا"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "اقترح عليك هذا الجهاز : \n\nhttps://www.jarir.com/sa-ar/microsoft-surface-pro-2-in-1-laptops-538287.html\n\nوتسعدني خدمتك دائماً .."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#برمجة",
+      "dialog_node": "node_7_1625490953591",
+      "previous_sibling": "node_3_1625490952191"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "عفوا ، تسرني مساعدتك :) "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#شكر",
+      "dialog_node": "node_9_1625491235950",
+      "previous_sibling": "node_3_1625490954878"
+    },
+    {
+      "type": "standard",
+      "title": "أي شيء آخر",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "لم أفهم، يمكنك محاولة اعادة الصياغة"
+              },
+              {
+                "text": "هل يمكنك اعادة صياغة عبارتك؟ أنا لا فهم"
+              },
+              {
+                "text": "لم أفهم قصدك"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "أي شيء آخر",
+      "previous_sibling": "node_9_1625491235950",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "مرحبا",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "أهلا بك ، انا هنا لمساعدتك في اختيار الكمبيوترالمحمول المناسب لك."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "مرحبا"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": ":هل قصدت",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "كل ما سبق خطأ"
+    },
+    "human_agent_assist": {
+      "prompt": ":هل قصدت"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "التحدث",
+  "language": "ar",
+  "description": ""
+}
