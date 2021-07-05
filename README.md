@@ -6,4 +6,5 @@ Then the chatbot will suggest a suitable laptop based on the user's choice with 
 
 # here how it looks : 
 
+![5fiibv](https://user-images.githubusercontent.com/65510649/124483822-6d71ef80-ddb3-11eb-8512-f5b8dbae8662.gif)
 
