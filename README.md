@@ -8,3 +8,4 @@ Then the chatbot will suggest a suitable laptop based on the user's choice with 
 
 ![5fiibv](https://user-images.githubusercontent.com/65510649/124483822-6d71ef80-ddb3-11eb-8512-f5b8dbae8662.gif)
 
+![Screenshot (715)](https://user-images.githubusercontent.com/65510649/124484156-c93c7880-ddb3-11eb-92a2-2620f9f60f35.png)
